@@ -7,7 +7,7 @@ package:
 source:
     fn: qutip-{{ version }}.tar.gz
     url: http://qutip.org/downloads/{{ version }}/qutip-{{ version }}.tar.gz
-    sha256: f0b973aa22844989cfe04c45ce42854a95f8fc8546213b9a7082b66e1f9a9e9d
+    sha256: 3263158c3d06844511f6b0e1749cdccec8fceacc2926b54828d1d99a8c75bd61
 
 build:
     number: 0
@@ -20,7 +20,7 @@ requirements:
     - numpy x.x
     - cython >=0.21
     - scipy >=0.15
-    - mingwpy                         # [win and (py2k or py34)]
+    - mingwpy                         # [win and py2k]
     - toolchain
     
   run:
@@ -29,7 +29,7 @@ requirements:
     - numpy x.x
     - scipy >=0.15
     - cython >=0.21
-    - mingwpy                         # [win and (py2k or py34)]
+    - mingwpy                         # [win and py2k]
     
 test:
   imports:
@@ -44,3 +44,4 @@ extra:
   recipe-maintainers:
     - ajgpitch
     - sahmed95
+    - nonhermitian
