@@ -12,6 +12,8 @@ source:
 build:
     number: 0
     script: $PYTHON setup.py install  # [unix]
+    # ajgpitch 2017-03-16: win py27 build currently failing due to error on import scipy.misc
+    skip: True                        # [win and py2k]
 
 requirements:
   build:
@@ -20,7 +22,7 @@ requirements:
     - numpy x.x
     - cython >=0.21
     - scipy >=0.15
-    - mingwpy                         # [win and py2k]
+#    - mingwpy                         # [win and py2k]
     - toolchain
     
   run:
@@ -29,7 +31,7 @@ requirements:
     - numpy x.x
     - scipy >=0.15
     - cython >=0.21
-    - mingwpy                         # [win and py2k]
+#    - mingwpy                         # [win and py2k]
     
 test:
   imports:
