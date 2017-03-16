@@ -7,7 +7,7 @@ package:
 source:
     fn: qutip-{{ version }}.tar.gz
     url: http://qutip.org/downloads/{{ version }}/qutip-{{ version }}.tar.gz
-    sha256: 3263158c3d06844511f6b0e1749cdccec8fceacc2926b54828d1d99a8c75bd61
+    sha256: b41963d33662121d3f996c5c4f8f28a63c5253d5ffb3f4e1a4e88d84e213b006
 
 build:
     number: 0
