@@ -23,7 +23,7 @@ requirements:
     - python
     - setuptools
     - numpy x.x
-    - cython >=0.21
+    - cython >=0.21,<0.26
     - scipy >=0.15
     - toolchain
     
