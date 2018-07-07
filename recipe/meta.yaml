@@ -12,7 +12,7 @@ source:
     #v4.2.0 build 2: sha256: 87d677c6450a17a4dd8cfa1c7ae5f1f7646c47b63dab5abd88980093a47611e5
 
 build:
-    number: 2
+    number: 3
     script: $PYTHON setup.py install  # [unix]
     # ajgpitch 2017-03-16: win py27 build currently failing due to error on import scipy.misc
     # ajgpitch 2017-07-28: decided to give up on win py2k build until further notice
@@ -20,20 +20,22 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - python
     - setuptools
-    - numpy x.x
+    - numpy
     - cython >=0.21
     - scipy >=0.15
-    - toolchain
-    
+
   run:
     - python
     - setuptools
-    - numpy x.x
+    - {{ pin_compatible('numpy') }}
     - scipy >=0.15
     - cython >=0.21
-    
+
 test:
   imports:
     - qutip
