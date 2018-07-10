@@ -25,7 +25,7 @@ requirements:
     - numpy x.x
     - cython >=0.21
     - scipy >=0.15
-    - toolchain
+    - {{ compiler('cxx') }}
     
   run:
     - python
