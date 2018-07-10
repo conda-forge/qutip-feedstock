@@ -13,20 +13,20 @@ source:
 
 build:
     number: 0
-    script: $PYTHON setup.py install  # [unix]
+    script: python -m pip install --no-deps --ignore-installed . --verbose  # [unix]
     # ajgpitch 2017-03-16: win py27 build currently failing due to error on import scipy.misc
     # ajgpitch 2017-07-28: decided to give up on win py2k build until further notice
     skip: True                        # [win and py2k]
 
 requirements:
   build:
+    - {{ compiler('cxx') }}
+  host:
     - python
-    - setuptools
-    - {{ pin_compatible('numpy') }}
+    - pip
+    - numpy
     - cython >=0.21
     - scipy >=0.15
-    - {{ compiler('cxx') }}
-    
   run:
     - python
     - setuptools
