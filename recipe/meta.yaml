@@ -30,7 +30,7 @@ requirements:
   run:
     - python
     - setuptools
-    - numpy x.x
+    - {{ pin_compatible('numpy') }}
     - scipy >=0.15
     - cython >=0.21
     
