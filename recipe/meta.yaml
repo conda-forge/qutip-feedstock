@@ -13,7 +13,7 @@ source:
     #v4.3.1 build 2: sha256: e2d243a24b5b8577337cfc57fe1efbe12cb3f4a0d6e14c06aa9583dbe68d53f4
 
 build:
-    number: 0
+    number: 1
     script: python -m pip install --no-deps --ignore-installed . --verbose  # [unix]
     #skip: True                        # [win and py2k]
 
