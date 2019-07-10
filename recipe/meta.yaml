@@ -21,13 +21,13 @@ requirements:
   build:
     - {{ compiler('cxx') }}
   host:
-    - python >=3
+    - python
     - pip
     - numpy {{ numpy }}
     - cython >=0.21
     - scipy >=1.0
   run:
-    - python >=3
+    - python
     - setuptools
     - {{ pin_compatible('numpy') }}
     - scipy >=1.0
