@@ -282,6 +282,7 @@ Feedstock Maintainers
 
 * [@ajgpitch](https://github.com/ajgpitch/)
 * [@ericgig](https://github.com/ericgig/)
+* [@jakelishman](https://github.com/jakelishman/)
 * [@nathanshammah](https://github.com/nathanshammah/)
 * [@nonhermitian](https://github.com/nonhermitian/)
 * [@quantshah](https://github.com/quantshah/)
