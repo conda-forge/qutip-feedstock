@@ -1,16 +1,16 @@
-{% set version = "4.5.3" %}
+{% set version = "4.6.0" %}
 
 package:
-    name: qutip
-    version: {{ version }}
+  name: qutip
+  version: {{ version }}
 
 source:
-    url: https://github.com/qutip/qutip/archive/v{{ version }}.tar.gz
-    sha256: 89658edecf730f720f2febc60bf7994bcf8659323c0a901d5ac12a8e7b2894cc
+  url: https://github.com/qutip/qutip/archive/v{{ version }}.tar.gz
+  sha256: b65f96debd50301e9e6400a762d810fbe3c58fea010143d26a21ff84cbee6119
 
 build:
-    number: 0
-    script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
 requirements:
   build:
@@ -32,10 +32,10 @@ test:
     - qutip
 
 about:
-    home: http://qutip.org
-    license: BSD-3-Clause
-    license_file: LICENSE.txt
-    summary: 'QuTiP is open-source software for simulating the dynamics of open quantum systems and optimal quantum control'
+  home: http://qutip.org
+  license: BSD-3-Clause
+  license_file: LICENSE.txt
+  summary: QuTiP is open-source software for simulating the dynamics of open quantum systems and optimal quantum control
 
 extra:
   recipe-maintainers:
