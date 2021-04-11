@@ -1,4 +1,4 @@
-{% set version = "4.5.3" %}
+{% set version = "4.6.0" %}
 
 package:
     name: qutip
@@ -6,7 +6,7 @@ package:
 
 source:
     url: https://github.com/qutip/qutip/archive/v{{ version }}.tar.gz
-    sha256: 89658edecf730f720f2febc60bf7994bcf8659323c0a901d5ac12a8e7b2894cc
+    sha256: 695704ef15034dc300b23a3e844cf32284edf676f6d9c996a0f4869e81cf72fe
 
 build:
     number: 0
