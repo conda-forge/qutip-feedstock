@@ -6,10 +6,10 @@ package:
 
 source:
     url: https://github.com/qutip/qutip/archive/v{{ version }}.tar.gz
-    sha256: 695704ef15034dc300b23a3e844cf32284edf676f6d9c996a0f4869e81cf72fe
+    sha256: d305c5a8b906387752a8e19a076f1b3af1f7ec5072e8c6cee3e2bb8687779106
 
 build:
-    number: 0
+    number: 1
     script: "{{ PYTHON }} -m pip install . --no-deps -vv"  # [not win]
 
 requirements:
