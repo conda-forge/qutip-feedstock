@@ -6,7 +6,7 @@ package:
 
 source:
     url: https://github.com/qutip/qutip/archive/v{{ version }}.tar.gz
-    sha256: 01f9564a5f87dbee783add707d546b646932a6edad946bfe09787727f52211e9
+    sha256: 00cb63442b6aba598dd3d1baaf8272dc3ba9cc4acac4bc18cdee62d92ce6e570
 
 build:
     number: 0
