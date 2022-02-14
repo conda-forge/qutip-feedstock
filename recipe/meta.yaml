@@ -9,11 +9,15 @@ source:
   sha256: c750953d7ab6305f20234e8d75707cae421c248eb000e96b1499092f2ea15168
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cython                                 # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
     - {{ compiler('cxx') }}
   host:
     - python
