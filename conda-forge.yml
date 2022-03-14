@@ -8,3 +8,6 @@ provider:
   osx_64: azure
   win_64: azure
 test_on_native_only: true
+github:
+  branch_name: main
+  tooling_branch_name: main
