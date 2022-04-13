@@ -1,4 +1,4 @@
-{% set version = "4.6.3" %}
+{% set version = "4.7.0" %}
 
 package:
   name: qutip
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/qutip/qutip/archive/v{{ version }}.tar.gz
-  sha256: c750953d7ab6305f20234e8d75707cae421c248eb000e96b1499092f2ea15168
+  sha256: e70cad2242b08a9acfdcbfe44008840758e5683af92f35009e90521dfa3a525c
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
 requirements:
