@@ -1,4 +1,4 @@
-{% set version = "5.0.1" %}
+{% set version = "4.7.6" %}
 
 package:
   name: qutip
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/qutip/qutip/archive/v{{ version }}.tar.gz
-  sha256: 59517336571223266b7771db049769ac3a286fda5ae02d469885ec8c237a23b6
+  sha256: 4a5a2cad914533e9bd920cefb4af97a1abc6ad854cb23fabdf4e79eccc55b70e
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pip
     - numpy {{ numpy }}
     - cython >=0.29.20,<3.0.0
-    - scipy >=1.0
+    - scipy <1.13.0,>=1.0
     - packaging
   run:
     - python
